@@ -1,0 +1,156 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Latar belakang lembut dan tenang */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Kontainer utama */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul halaman */
+h1 {
+    text-align: center;
+    color: #138496;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+/* Tabel Reservasi */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+th {
+    background-color: #138496;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+td {
+    background-color: #ffffff;
+    color: #333;
+    font-size: 0.9em;
+}
+
+td button {
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-warning {
+    background-color: #ffb84d;
+    color: white;
+}
+
+button.btn-warning:hover {
+    background-color: #e68a00;
+}
+
+button.btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+button.btn-info:hover {
+    background-color: #138496;
+}
+
+button.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"], input[type="date"], input[type="time"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="time"]:focus, select:focus {
+    border-color: #138496;
+    outline: none;
+}
+
+/* Styling untuk backdrop background */
+body {
+    background: url('https://images.unsplash.com/photo-1521747116042-d75fae1b4c0b') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Styling untuk overlay kontainer */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Membuat latar belakang kontainer sedikit transparan */
+    padding: 30px;
+}
+
+/* Tabel dengan efek bayangan */
+table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsiveness untuk perangkat mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 5px 10px;
+    }
+}
